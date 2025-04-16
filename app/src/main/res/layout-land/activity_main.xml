@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Left Section: Input and Keypad -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Input Text Field -->
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="Input"
+            android:inputType="text"
+            android:gravity="top"
+            android:padding="8dp" />
+
+        <!-- Number/Hex Keypad -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="16dp"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="D" />
+
+            <Button
+                android:id="@+id/buttonE"
+                android:layout_width="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="E" />
+
+            <Button
+                android:id="@+id/buttonF"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/rounded_button"
+                android:layout_columnWeight="1"
+                android:text="F" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="0" />
+        </GridLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/green"
+                android:layout_marginEnd="8dp"
+                android:text="OK" />
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="0dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/red"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="BACK" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Right Section: History -->
+    <EditText
+        android:id="@+id/historyText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:editable="false"
+        android:focusable="false"
+        android:gravity="top"
+        android:hint="History"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:padding="16dp" />
+
+</LinearLayout>
